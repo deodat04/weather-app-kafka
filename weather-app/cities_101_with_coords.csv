@@ -1,0 +1,102 @@
+department_code,city_name,city_id,lat,lon,country,admin1,population,timezone,source
+01,Bourg-en-Bresse,DEP01-3031009,46.20574,5.2258,FR,Auvergne-Rhône-Alpes,45340,Europe/Paris,open-meteo-geocoding
+02,Laon,DEP02-3007477,49.5631,3.62714,FR,Hauts-de-France,28688,Europe/Paris,open-meteo-geocoding
+03,Moulins,DEP03-2991481,46.56459,3.33243,FR,Auvergne-Rhône-Alpes,23095,Europe/Paris,open-meteo-geocoding
+04,Digne-les-Bains,DEP04-3021382,44.09252,6.23199,FR,Provence-Alpes-Côte d'Azur,18986,Europe/Paris,open-meteo-geocoding
+05,Gap,DEP05-3016702,44.55858,6.07868,FR,Provence-Alpes-Côte d'Azur,42715,Europe/Paris,open-meteo-geocoding
+06,Nice,DEP06-2990440,43.70313,7.26608,FR,Provence-Alpes-Côte d'Azur,342669,Europe/Paris,open-meteo-geocoding
+07,Privas,DEP07-2985290,44.735,4.59918,FR,Auvergne-Rhône-Alpes,9545,Europe/Paris,open-meteo-geocoding
+08,Charleville-Mézières,DEP08-3026613,49.7685,4.72487,FR,Grand Est,52415,Europe/Paris,open-meteo-geocoding
+09,Foix,DEP09-3018174,42.96535,1.60705,FR,Occitanie,9860,Europe/Paris,open-meteo-geocoding
+10,Troyes,DEP10-2971549,48.30073,4.08524,FR,Grand Est,60785,Europe/Paris,open-meteo-geocoding
+11,Carcassonne,DEP11-3028641,43.21649,2.34863,FR,Occitanie,49600,Europe/Paris,open-meteo-geocoding
+12,Rodez,DEP12-2983154,44.35258,2.57338,FR,Occitanie,28337,Europe/Paris,open-meteo-geocoding
+13,Marseille,DEP13-2995469,43.29695,5.38107,FR,Provence-Alpes-Côte d'Azur,870731,Europe/Paris,open-meteo-geocoding
+14,Caen,DEP14-3029241,49.18585,-0.35912,FR,Normandie,110624,Europe/Paris,open-meteo-geocoding
+15,Aurillac,DEP15-3036016,44.92539,2.43983,FR,Auvergne-Rhône-Alpes,34724,Europe/Paris,open-meteo-geocoding
+16,Angoulême,DEP16-3037598,45.64997,0.15345,FR,Nouvelle-Aquitaine,49468,Europe/Paris,open-meteo-geocoding
+17,La Rochelle,DEP17-3006787,46.16308,-1.15222,FR,Nouvelle-Aquitaine,76810,Europe/Paris,open-meteo-geocoding
+18,Bourges,DEP18-3031005,47.08333,2.4,FR,Centre-Val de Loire,67987,Europe/Paris,open-meteo-geocoding
+19,Tulle,DEP19-2971482,45.26582,1.77233,FR,Nouvelle-Aquitaine,16969,Europe/Paris,open-meteo-geocoding
+2A,Ajaccio,DEP2A-3038334,41.91886,8.73812,FR,Corse,54364,Europe/Paris,open-meteo-geocoding
+2B,Bastia,DEP2B-3034640,42.70219,9.45123,FR,Corse,41001,Europe/Paris,open-meteo-geocoding
+21,Dijon,DEP21-3021372,47.31667,5.01667,FR,Bourgogne-Franche-Comté,158002,Europe/Paris,open-meteo-geocoding
+22,Saint-Brieuc,DEP22-2981280,48.51513,-2.76838,FR,Bretagne,52774,Europe/Paris,open-meteo-geocoding
+23,Guéret,DEP23-3014383,46.17185,1.87166,FR,Nouvelle-Aquitaine,15853,Europe/Paris,open-meteo-geocoding
+24,Périgueux,DEP24-2987967,45.18691,0.71439,FR,Nouvelle-Aquitaine,34770,Europe/Paris,open-meteo-geocoding
+25,Besançon,DEP25-3033123,47.24878,6.01815,FR,Bourgogne-Franche-Comté,128426,Europe/Paris,open-meteo-geocoding
+26,Valence,DEP26-2509954,39.47391,-0.37966,ES,Communauté Valencienne,792492,Europe/Madrid,open-meteo-geocoding
+27,Évreux,DEP27-3019265,49.02414,1.15082,FR,Normandie,57795,Europe/Paris,open-meteo-geocoding
+28,Chartres,DEP28-3026467,48.44685,1.48925,FR,Centre-Val de Loire,43838,Europe/Paris,open-meteo-geocoding
+29,Quimper,DEP29-2984701,47.99597,-4.09795,FR,Bretagne,63849,Europe/Paris,open-meteo-geocoding
+30,Nîmes,DEP30-2990363,43.83665,4.35788,FR,Occitanie,148236,Europe/Paris,open-meteo-geocoding
+31,Toulouse,DEP31-2972315,43.60426,1.44367,FR,Occitanie,493465,Europe/Paris,open-meteo-geocoding
+32,Auch,DEP32-3036281,43.64561,0.58856,FR,Occitanie,24494,Europe/Paris,open-meteo-geocoding
+33,Bordeaux,DEP33-3031582,44.84044,-0.5805,FR,Nouvelle-Aquitaine,260958,Europe/Paris,open-meteo-geocoding
+34,Montpellier,DEP34-2992166,43.61093,3.87635,FR,Occitanie,248252,Europe/Paris,open-meteo-geocoding
+35,Rennes,DEP35-2983990,48.11198,-1.67429,FR,Bretagne,220488,Europe/Paris,open-meteo-geocoding
+36,Châteauroux,DEP36-3026204,46.81248,1.69362,FR,Centre-Val de Loire,53301,Europe/Paris,open-meteo-geocoding
+37,Tours,DEP37-2972191,47.39484,0.70398,FR,Centre-Val de Loire,141621,Europe/Paris,open-meteo-geocoding
+38,Grenoble,DEP38-3014728,45.17869,5.71479,FR,Auvergne-Rhône-Alpes,158552,Europe/Paris,open-meteo-geocoding
+39,Lons-le-Saunier,DEP39-2997626,46.67535,5.55575,FR,Bourgogne-Franche-Comté,20678,Europe/Paris,open-meteo-geocoding
+40,Mont-de-Marsan,DEP40-2992771,43.89022,-0.49713,FR,Nouvelle-Aquitaine,36205,Europe/Paris,open-meteo-geocoding
+41,Blois,DEP41-3032213,47.59432,1.32912,FR,Centre-Val de Loire,53660,Europe/Paris,open-meteo-geocoding
+42,Saint-Étienne,DEP42-2980291,45.43389,4.39,FR,Auvergne-Rhône-Alpes,176280,Europe/Paris,open-meteo-geocoding
+43,Le Puy-en-Velay,DEP43-3002465,45.04366,3.88523,FR,Auvergne-Rhône-Alpes,22718,Europe/Paris,open-meteo-geocoding
+44,Nantes,DEP44-2990969,47.21725,-1.55336,FR,Pays de la Loire,318808,Europe/Paris,open-meteo-geocoding
+45,Orléans,DEP45-2989317,47.90289,1.90389,FR,Centre-Val de Loire,116269,Europe/Paris,open-meteo-geocoding
+46,Cahors,DEP46-3029213,44.4491,1.43663,FR,Occitanie,23331,Europe/Paris,open-meteo-geocoding
+47,Agen,DEP47-3038634,44.20199,0.62055,FR,Nouvelle-Aquitaine,34367,Europe/Paris,open-meteo-geocoding
+48,Mende,DEP48-2994617,44.52161,3.49978,FR,Occitanie,14837,Europe/Paris,open-meteo-geocoding
+49,Angers,DEP49-3037656,47.47156,-0.55202,FR,Pays de la Loire,168279,Europe/Paris,open-meteo-geocoding
+50,Saint-Lô,DEP50-2978758,49.11624,-1.09031,FR,Normandie,21722,Europe/Paris,open-meteo-geocoding
+51,Châlons-en-Champagne,DEP51-3027487,48.95393,4.36724,FR,Grand Est,51257,Europe/Paris,open-meteo-geocoding
+52,Chaumont,DEP52-3025892,48.11121,5.14134,FR,Grand Est,28981,Europe/Paris,open-meteo-geocoding
+53,Laval,DEP53-6050610,45.56995,-73.692,CA,Québec,422993,America/Toronto,open-meteo-geocoding
+54,Nancy,DEP54-2990999,48.68439,6.18496,FR,Grand Est,105058,Europe/Paris,open-meteo-geocoding
+55,Bar-le-Duc,DEP55-3034911,48.77275,5.16108,FR,Grand Est,18595,Europe/Paris,open-meteo-geocoding
+56,Vannes,DEP56-2970777,47.65688,-2.76205,FR,Bretagne,54020,Europe/Paris,open-meteo-geocoding
+57,Metz,DEP57-2994160,49.11911,6.17269,FR,Grand Est,123914,Europe/Paris,open-meteo-geocoding
+58,Nevers,DEP58-2990474,46.98956,3.159,FR,Bourgogne-Franche-Comté,43988,Europe/Paris,open-meteo-geocoding
+59,Lille,DEP59-2998324,50.63297,3.05858,FR,Hauts-de-France,234475,Europe/Paris,open-meteo-geocoding
+60,Beauvais,DEP60-3034006,49.43333,2.08333,FR,Hauts-de-France,53393,Europe/Paris,open-meteo-geocoding
+61,Alençon,DEP61-3038230,48.43476,0.09311,FR,Normandie,30786,Europe/Paris,open-meteo-geocoding
+62,Arras,DEP62-3036784,50.29301,2.78186,FR,Hauts-de-France,47052,Europe/Paris,open-meteo-geocoding
+63,Clermont-Ferrand,DEP63-3024635,45.77969,3.08682,FR,Auvergne-Rhône-Alpes,147865,Europe/Paris,open-meteo-geocoding
+64,Pau,DEP64-2988358,43.31117,-0.35583,FR,Nouvelle-Aquitaine,82697,Europe/Paris,open-meteo-geocoding
+65,Tarbes,DEP65-2973385,43.23407,0.07139,FR,Occitanie,52106,Europe/Paris,open-meteo-geocoding
+66,Perpignan,DEP66-2987914,42.69764,2.89541,FR,Occitanie,110706,Europe/Paris,open-meteo-geocoding
+67,Strasbourg,DEP67-2973783,48.58392,7.74553,FR,Grand Est,274845,Europe/Paris,open-meteo-geocoding
+68,Colmar,DEP68-3024297,48.08078,7.35584,FR,Grand Est,65405,Europe/Paris,open-meteo-geocoding
+69,Lyon,DEP69-2996944,45.74846,4.84671,FR,Auvergne-Rhône-Alpes,522969,Europe/Paris,open-meteo-geocoding
+70,Vesoul,DEP70-2969562,47.62604,6.14251,FR,Bourgogne-Franche-Comté,19892,Europe/Paris,open-meteo-geocoding
+71,Mâcon,DEP71-4207400,32.84069,-83.6324,US,Géorgie,91351,America/New_York,open-meteo-geocoding
+72,Le Mans,DEP72-3003603,48.0021,0.20251,FR,Pays de la Loire,144515,Europe/Paris,open-meteo-geocoding
+73,Chambéry,DEP73-3027422,45.56628,5.92079,FR,Auvergne-Rhône-Alpes,61640,Europe/Paris,open-meteo-geocoding
+74,Annecy,DEP74-3037543,45.90878,6.12565,FR,Auvergne-Rhône-Alpes,49232,Europe/Paris,open-meteo-geocoding
+75,Paris,DEP75-2988507,48.85341,2.3488,FR,Île-de-France,2138551,Europe/Paris,open-meteo-geocoding
+76,Rouen,DEP76-2982652,49.44313,1.09932,FR,Normandie,234475,Europe/Paris,open-meteo-geocoding
+77,Melun,DEP77-2994651,48.5457,2.65356,FR,Île-de-France,38953,Europe/Paris,open-meteo-geocoding
+78,Versailles,DEP78-2969679,48.80359,2.13424,FR,Île-de-France,85416,Europe/Paris,open-meteo-geocoding
+79,Niort,DEP79-2990355,46.32313,-0.45877,FR,Nouvelle-Aquitaine,54660,Europe/Paris,open-meteo-geocoding
+80,Amiens,DEP80-3037854,49.9,2.3,FR,Hauts-de-France,143086,Europe/Paris,open-meteo-geocoding
+81,Albi,DEP81-3038261,43.9298,2.148,FR,Occitanie,52409,Europe/Paris,open-meteo-geocoding
+82,Montauban,DEP82-2993002,44.01759,1.3542,FR,Occitanie,52434,Europe/Paris,open-meteo-geocoding
+83,Toulon,DEP83-2972328,43.12442,5.92836,FR,Provence-Alpes-Côte d'Azur,168701,Europe/Paris,open-meteo-geocoding
+84,Avignon,DEP84-3035681,43.94834,4.80892,FR,Provence-Alpes-Côte d'Azur,89769,Europe/Paris,open-meteo-geocoding
+85,La Roche-sur-Yon,DEP85-3006767,46.66974,-1.42757,FR,Pays de la Loire,59410,Europe/Paris,open-meteo-geocoding
+86,Poitiers,DEP86-2986495,46.58261,0.34348,FR,Nouvelle-Aquitaine,85960,Europe/Paris,open-meteo-geocoding
+87,Limoges,DEP87-2998286,45.83362,1.24759,FR,Nouvelle-Aquitaine,141176,Europe/Paris,open-meteo-geocoding
+88,Épinal,DEP88-3020035,48.18324,6.45304,FR,Grand Est,39518,Europe/Paris,open-meteo-geocoding
+89,Auxerre,DEP89-3035843,47.7996,3.57033,FR,Bourgogne-Franche-Comté,41516,Europe/Paris,open-meteo-geocoding
+90,Belfort,DEP90-3033791,47.64218,6.85385,FR,Bourgogne-Franche-Comté,54562,Europe/Paris,open-meteo-geocoding
+91,Évry-Courcouronnes,DEP91-3019256,48.6328,2.44049,FR,Île-de-France,51900,Europe/Paris,open-meteo-geocoding
+92,Nanterre,DEP92-2990970,48.89198,2.20675,FR,Île-de-France,86719,Europe/Paris,open-meteo-geocoding
+93,Bobigny,DEP93-3032179,48.90982,2.45012,FR,Île-de-France,44962,Europe/Paris,open-meteo-geocoding
+94,Créteil,DEP94-3022530,48.79266,2.46569,FR,Île-de-France,84833,Europe/Paris,open-meteo-geocoding
+95,Cergy,DEP95-3027883,49.03645,2.07613,FR,Île-de-France,57576,Europe/Paris,open-meteo-geocoding
+971,Basse-Terre,DEP971-3579732,15.99714,-61.73214,GP,,11472,America/Guadeloupe,open-meteo-geocoding
+972,Fort-de-France,DEP972-3570675,14.60365,-61.07418,MQ,,89995,America/Martinique,open-meteo-geocoding
+973,Cayenne,DEP973-3382160,4.9381,-52.33455,GF,,61550,America/Cayenne,open-meteo-geocoding
+974,Saint-Denis,DEP974-935264,-20.88231,55.4504,RE,,154765,Indian/Reunion,open-meteo-geocoding
+976,Mamoudzou,DEP976-921815,-12.78234,45.22878,YT,Mamoudzou,54831,Indian/Mayotte,open-meteo-geocoding
