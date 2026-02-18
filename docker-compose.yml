@@ -55,6 +55,9 @@ services:
       - local-kafka
     ports:
       - "9308:9308"
+    command:
+      - "--kafka.server=broker:9092"
+      - "--offset.show-all"
     environment:
       KAFKA_SERVER: "broker:9092"
     depends_on:
