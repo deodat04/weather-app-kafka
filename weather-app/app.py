@@ -1,3 +1,4 @@
+from pathlib import Path
 import csv
 import json
 import time
@@ -6,10 +7,17 @@ from datetime import datetime, timedelta
 import os
 from kafka import KafkaProducer
 
-# producer = KafkaProducer(
-#     bootstrap_servers=os.getenv("KAFKA_BOOTSTRAP_SERVERS"),
-#     value_serializer=lambda v: json.dumps(v).encode("utf-8")
-# )
+BASE_DIR = Path(__file__).resolve().parent
+CSV_PATH = BASE_DIR / 'cities_101_with_coords.csv'
+
+if not CSV_PATH.exists():
+    print(f"Fichier introuvable: {CSV_PATH}")
+    raise SystemExit(1)
+
+API_URL = 'https://archive-api.open-meteo.com/v1/archive'
+
+end_date = datetime.today().date()
+start_date = end_date - timedelta(days=90)
 
 def create_producer():
     while True:
@@ -24,53 +32,81 @@ def create_producer():
         except Exception as e:
             print("❌ Kafka non disponible, nouvelle tentative dans 3s :", e)
             time.sleep(3)
-#producer = create_producer()
 
-
-API_URL = 'https://archive-api.open-meteo.com/v1/archive'
-
-end_date = datetime.today().date()
-start_date = end_date - timedelta(days=90)
-
-
-def fetch_weather(lat, lon):
-    parameter = {
-                "latitude": lat,
-                "longitude": lon,
-                "start_date": start_date,
-                "end_date": end_date,
-                "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m",
-                "timezone": timezone
+def fetch_weather(lat, lon, timezone):
+    params = {
+        "latitude": lat,
+        "longitude": lon,
+        "start_date": str(start_date),
+        "end_date": str(end_date),
+        "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m",
+        "timezone": timezone
     }
-    response = requests.get(API_URL, params=parameter)
-    return response.json()
+    try:
+        resp = requests.get(API_URL, params=params, timeout=10)
+    except Exception as e:
+        print("❌ Erreur requête API :", e)
+        return None
 
-while True :
-    with open('cities_101_with_coords.csv', 'r') as infile :
+    if resp.status_code != 200:
+        print(f"❌ API HTTP {resp.status_code} pour {lat},{lon} : {resp.text}")
+        return None
+
+    try:
+        data = resp.json()
+    except ValueError:
+        print("❌ Réponse non JSON :", resp.text)
+        return None
+
+    if "hourly" not in data:
+        print("❌ Clé 'hourly' absente dans la réponse :", data)
+        return None
+
+    return data
+
+# producer = create_producer()
+
+while True:
+    with CSV_PATH.open('r', encoding='utf-8') as infile:
         reader = csv.DictReader(infile)
-
         for row in reader:
-            city = row["city_name"]
-            lat = row["lat"]
-            lon = row["lon"]
-            timezone = row["timezone"]
+            city = row.get("city_name")
+            lat = row.get("lat")
+            lon = row.get("lon")
+            timezone = row.get("timezone")
+
+            if not (city and lat and lon and timezone):
+                print("⚠️ Ligne CSV incomplète, skip :", row)
+                continue
 
             print(f"\n=== {city} ({lat}, {lon}) ===")
 
-            data = fetch_weather(lat, lon)
+            data = fetch_weather(lat, lon, timezone)
+            if data is None:
+                print("⏭️ Données non disponibles pour cette ville, on passe à la suivante.")
+                continue
 
             hourly = data["hourly"]
 
-            for i in range(0, len(hourly["time"]), 1):
+            # sécurité si les listes n'ont pas la même longueur
+            times = hourly.get("time", [])
+            temps = hourly.get("temperature_2m", [])
+            hums = hourly.get("relative_humidity_2m", [])
+            vents = hourly.get("wind_speed_10m", [])
+
+            length = min(len(times), len(temps), len(hums), len(vents))
+
+            for i in range(length):
                 message = {
                     "city": city,
-                    "time": hourly["time"][i],
-                    "Temp": hourly["temperature_2m"][i],
-                    "Hum:": hourly["relative_humidity_2m"][i],
-                    "Vent:": hourly["wind_speed_10m"][i]
+                    "time": times[i],
+                    "Temp": temps[i],
+                    "Hum": hums[i],
+                    "Vent": vents[i]
                 }
 
-                #producer.send("weather-topic", message)
-                #print("Sent:888888", message)
+                # if producer:
+                #     producer.send("weather-topic", message)
+                print("Prepared message:", message)
 
     time.sleep(10)
